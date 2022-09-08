@@ -1,0 +1,18 @@
+﻿<Window x:Class="ConstrLeo.About"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ConstrLeo"
+        mc:Ignorable="d"
+        Title="О программе" Height="150" Width="300" WindowStartupLocation="CenterScreen" MinWidth="300" MinHeight="150" HorizontalAlignment="Center" VerticalAlignment="Center" MaxWidth="300" MaxHeight="150">
+    <Grid>
+
+        <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+            <TextBlock x:Name="txtBl_about" TextWrapping="Wrap" Margin="0" FontStyle="Italic" HorizontalAlignment="Center" Foreground="#FF996E6E" FontFamily="Segoe Print" Width="157" ><Run Text="CorpsBoat version 0.2"/><Run Text="
+                                                                                                                                                                                                                                by Alexander Leontyev Contacts: alex_l_eon@mail.ru                                                                                                                                                                                                                                                                                                                                                                                                                                        ©AUMSU 2017"/> </TextBlock>
+
+        </StackPanel>
+
+    </Grid>
+</Window>

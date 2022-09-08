@@ -1,0 +1,194 @@
+﻿<Window x:Class="WpfApplication1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApplication1"
+        mc:Ignorable="d"
+        Title="CorpsBoat AlfaTest" Height="720" Width="1280" WindowStartupLocation="CenterScreen" HorizontalAlignment="Center" VerticalAlignment="Center" Loaded="Window_Loaded" MinWidth="1280" MinHeight="720" Background="#FFF0F0F0">
+    <Grid>
+
+
+        <TreeView HorizontalAlignment="Right" FontSize="20" Margin="0,10,10,294" Foreground="Black" VerticalContentAlignment="Center" Background="#FFF0F0F0">
+
+            <TreeViewItem>
+                <TreeViewItem.Header>
+                    <StackPanel Orientation="Horizontal">
+                        <Label Content="Системы набора" Cursor="" FontFamily="Arial" FontWeight="Bold" FontSize="18.667"/>
+                    </StackPanel>
+                </TreeViewItem.Header>
+
+                <TreeViewItem FontSize="16" FontFamily="Arial">
+                    <TreeViewItem.Header>
+                        <StackPanel Orientation="Horizontal">
+                            <Label x:Name="lbl_hd1" Content="Переборка поперечная поперечная" Cursor="" FontSize="17.333" MouseLeftButtonDown="lbl_hd1_MouseLeftButtonDown"/>
+                        </StackPanel>
+                    </TreeViewItem.Header>
+
+                    <!-- Child Item -->
+
+                    <Label x:Name="lbl11" Content="Обшивка фальшборта" MouseLeftButtonDown="lbl11_MouseLeftButtonDown"/>
+                    <Label x:Name="lbl12" Content="Палубный стрингер" MouseLeftButtonDown="lbl12_MouseLeftButtonDown"/>
+                    <Label x:Name="lbl13" Content="Стойки фальшборта" MouseLeftButtonDown="lbl13_MouseLeftButtonDown"/>
+                    <Label x:Name="lbl14" Content="Ширстрек" MouseLeftButtonDown="lbl14_MouseLeftButtonDown"/>
+                    <Label x:Name="lbl15" Content="Шпангоуты" MouseLeftButtonDown="lbl15_MouseLeftButtonDown"/>
+                    <Label x:Name="lbl16" Content="Рамные шпангоуты" MouseLeftButtonDown="lbl16_MouseLeftButtonDown"/>
+                    <Label x:Name="lbl17" Content="Бимсы" MouseLeftButtonDown="lbl17_MouseLeftButtonDown"/>
+                    <Label x:Name="lbl18" Content="Стрингер бортовой" MouseLeftButtonDown="lbl18_MouseLeftButtonDown"/>
+                    <Label x:Name="lbl19" Content="Стойки" MouseLeftButtonDown="lbl19_MouseLeftButtonDown"/>
+                    <Label x:Name="lbl111" Content="Флор непроницаемый" MouseLeftButtonDown="lbl111_MouseLeftButtonDown"/>
+                    <Label x:Name="lbl112" Content="Флор сплошной" MouseLeftButtonDown="lbl112_MouseLeftButtonDown" />
+                    <Label x:Name="lbl113" Content="Вертикальный киль" MouseLeftButtonDown="lbl113_MouseLeftButtonDown"/>
+                    <Label x:Name="lbl114" Content="Горизонтальный киль" MouseLeftButtonDown="lbl114_MouseLeftButtonDown"/>
+                    <Label x:Name="lbl115" Content="Стрингеры днищевые" MouseLeftButtonDown="lbl115_MouseLeftButtonDown"/>
+                    <Label x:Name="lbl116" Content="Ребра жесткости" MouseLeftButtonDown="lbl116_MouseLeftButtonDown"/>
+                    <Label x:Name="lbl117" Content="Кницы скуловые" MouseLeftButtonDown="lbl117_MouseLeftButtonDown"/>
+
+                </TreeViewItem>
+                <TreeViewItem FontSize="16" MouseLeftButtonDown="lbl_hd2_MouseLeftButtonDown">
+                    <TreeViewItem.Header>
+                        <StackPanel Orientation="Horizontal">
+                            <Label x:Name="lbl_hd2" Content="Носовая оконечность" Cursor="" FontSize="17.333" MouseLeftButtonDown="lbl_hd2_MouseLeftButtonDown"/>
+                        </StackPanel>
+                    </TreeViewItem.Header>
+
+                    <!-- Child Item -->
+
+                    <Label x:Name="lbl21" Content="Ширстрек" MouseLeftButtonDown="lbl21_MouseLeftButtonDown"/>
+                    <Label x:Name="lbl22" Content="Палубный стрингер" MouseLeftButtonDown="lbl22_MouseLeftButtonDown"/>
+                    <Label x:Name="lbl23" Content="Форштевень" MouseLeftButtonDown="lbl23_MouseLeftButtonDown"/>
+                    <Label x:Name="lbl24" Content="Брештуки" MouseLeftButtonDown="lbl24_MouseLeftButtonDown"/>
+                    <Label x:Name="lbl25" Content="Флоры" MouseLeftButtonDown="lbl25_MouseLeftButtonDown"/>
+                    <Label x:Name="lbl26" Content="Ребра жесткости" MouseLeftButtonDown="lbl26_MouseLeftButtonDown"/>
+                    <Label x:Name="lbl27" Content="Шпангоуты" MouseLeftButtonDown="lbl27_MouseLeftButtonDown"/>
+                    <Label x:Name="lbl28" Content="Бимсы" MouseLeftButtonDown="lbl28_MouseLeftButtonDown"/>
+                    <Label x:Name="lbl29" Content="Кницы бимсовые" MouseLeftButtonDown="lbl29_MouseLeftButtonDown"/>
+                    <Label x:Name="lbl211" Content="Карлингсы" MouseLeftButtonDown="lbl211_MouseLeftButtonDown"/>
+                    
+                </TreeViewItem>
+                <TreeViewItem FontSize="16" MouseLeftButtonDown="lbl_hd3_MouseLeftButtonDown">
+                    <TreeViewItem.Header>
+                        <StackPanel Orientation="Horizontal">
+                            <Label x:Name="lbl_hd3" Content="Кормовая оконечность" Cursor="" FontSize="17.333" MouseLeftButtonDown="lbl_hd3_MouseLeftButtonDown"/>
+                        </StackPanel>
+                    </TreeViewItem.Header>
+
+                    <!-- Child Item -->
+
+                    <Label Content="Старн-пост"/>
+                    <Label Content="Кронштейн руля"/>
+                    <Label Content="Шпангоуты"/>
+                    <Label Content="Бимсы"/>
+                    <Label Content="Палубный стрингер"/>
+                    <Label Content="Ширстрек"/>
+                    <Label Content="Карлингсы"/>
+                    <Label Content="Флоры"/>                    
+
+                </TreeViewItem>
+                <TreeViewItem FontSize="16">
+                    <TreeViewItem.Header>
+                        <StackPanel Orientation="Horizontal">
+                            <Label x:Name="lbl_hd4" Content="Днищевые перекрытия" Cursor="" FontSize="17.333" MouseLeftButtonDown="lbl_hd4_MouseLeftButtonDown"/>
+                        </StackPanel>
+                    </TreeViewItem.Header>
+
+                    <!-- Child Item -->
+
+                    <Label Content="Стрингер бортовой"/>
+                    <Label Content="Стрингеры дницевые"/>
+                    <Label Content="Рамные щпангоуты"/>
+                    <Label Content="Кницы скуловые"/>
+                    <Label Content="Крайний междудонный лист"/>
+                    <Label Content="Флор сплошной"/>
+                    <Label Content="Шпангоуты"/>
+                    <Label Content="Флор непроницаемый"/>
+                    <Label Content="Ребра жесткости"/>
+                    <Label Content="Вертикальный киль"/>
+                    <Label Content="Горизонтальный киль"/>
+                    <Label Content="Скуловый пояс"/>
+                    <Label Content="Крайний междудонный лист"/>                    
+
+                </TreeViewItem>
+
+                <TreeViewItem FontSize="16">
+                    <TreeViewItem.Header>
+                        <StackPanel Orientation="Horizontal">
+                            <Label x:Name="lbl_hd5" Content="Бортовое перекрытия" Cursor="" FontSize="17.333" MouseLeftButtonDown="lbl_hd5_MouseLeftButtonDown"/>
+                        </StackPanel>
+                    </TreeViewItem.Header>
+
+                    <!-- Child Item -->
+
+                    <Label Content="Ширстрек"/>
+                    <Label Content="Обшивка фальшборта"/>
+                    <Label Content="Палубный стрингер"/>                    
+
+                </TreeViewItem>
+
+                <TreeViewItem FontSize="16">
+                    <TreeViewItem.Header>
+                        <StackPanel Orientation="Horizontal">
+                            <Label x:Name="lbl_hd6" Content="Палубное перекрытия" Cursor="" FontSize="17.333" MouseLeftButtonDown="lbl_hd6_MouseLeftButtonDown"/>
+                        </StackPanel>
+                    </TreeViewItem.Header>
+
+                    <!-- Child Item -->
+
+                    <Label Content="Ширстрек"/>
+                    <Label Content="Шпангоуты"/>
+                    <Label Content="Рамные шпангоуты"/>
+
+                </TreeViewItem>
+
+                <TreeViewItem FontSize="16">
+                    <TreeViewItem.Header>
+                        <StackPanel Orientation="Horizontal">
+                            <Label x:Name="lbl_hd7" Content="Средняя часть" Cursor="" FontSize="17.333" MouseLeftButtonDown="lbl_hd7_MouseLeftButtonDown"/>
+                        </StackPanel>
+                    </TreeViewItem.Header>
+
+                    <!-- Child Item -->
+
+                    <Label Content="Ширстрек"/>
+                    <Label Content="Обшивка фальшборта"/>
+                    <Label Content="Палубный стрингер"/>
+
+                </TreeViewItem>
+
+
+            </TreeViewItem>
+
+
+        </TreeView>
+
+        <DockPanel HorizontalAlignment="Left" VerticalAlignment="Top" Margin="15,15,0,37" LastChildFill="False" UseLayoutRounding="False">
+            <Image x:Name="image1" Source="Resources/main/main.png" IsHitTestVisible="True" IsEnabled="False" DockPanel.Dock="Top" VerticalAlignment="Center" HorizontalAlignment="Left" ScrollViewer.HorizontalScrollBarVisibility="Visible" FlowDirection="RightToLeft"/>
+
+        </DockPanel>
+
+        <StackPanel Orientation="Horizontal" VerticalAlignment="Bottom" HorizontalAlignment="Right" Margin="0,0,10,262" Width="394">
+            <TextBlock FontSize="20" FontWeight="Bold" Width="103" ><Run Text="Описание"/></TextBlock>
+        </StackPanel>
+
+        <StackPanel HorizontalAlignment="Right" VerticalAlignment="Bottom" Height="213" Width="394" RenderTransformOrigin="0.519,0.534" Orientation="Horizontal" Margin="0,0,10,44">
+            <TextBlock x:Name="txtBl" FontSize="16" IsHitTestVisible="True" HorizontalAlignment="Center" ScrollViewer.VerticalScrollBarVisibility="Auto" ScrollViewer.HorizontalScrollBarVisibility="Auto" TextWrapping="Wrap" ScrollViewer.CanContentScroll="True" Margin="0" VerticalAlignment="Top" Width="393">
+                <TextBlock.LayoutTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </TextBlock.LayoutTransform>
+            </TextBlock>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" VerticalAlignment="Bottom" HorizontalAlignment="left" Height="32" Width="533">
+            <Button x:Name="btn_about" Content="about" Height="25" Click="btn_about_Click" Width="92" Margin="10,0,0,0" Background="#FFD8D8D8" Foreground="Black" Opacity="0.5">
+                <Button.BorderBrush>
+                    <SolidColorBrush Color="White"/>
+                </Button.BorderBrush>
+            </Button>
+        </StackPanel>
+
+    </Grid>
+</Window>
